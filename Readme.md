@@ -3,9 +3,9 @@
 ![Резонатор](Rezinator8chastota.png)
 Ми підключемо його як зовнішнє джерело тактування HSE (Crystal/Ceramic Resonator). 
 1 Для початку зробимо попереднє налаштування проєкту в STM32CubeMX:
-![User_key](USER_KEY.png)
-1)	Налаштування портів вводу/виводу (GPIO):
 ![pochatoc](pochatoc.png)
+1)	Налаштування портів вводу/виводу (GPIO):
+![GPIO](GPIO_OUTPUT_INPUT_MX.png)
 На інтерактивній схемі мікроконтролера (Pinout view) налаштовано два виводи:
 1 PB2 (Світлодіод): переведено в режим GPIO_Output. 
 2 PC13 (Кнопка): переведено в режим GPIO_EXTI13 (зовнішнє переривання). У параметрах GPIO обрано спрацювання по наростаючому фронту сигналу (External Interrupt Mode with Rising edge trigger detection) та увімкнено внутрішню підтяжку до землі (Pull-down).
